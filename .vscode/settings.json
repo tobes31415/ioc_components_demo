@@ -1,0 +1,13 @@
+{
+  "files.exclude": {
+    "ioc_root\\build": true,
+    "ioc_root\\node_modules": true,
+    ".vscode": true,
+    "looks_real\\build": true,
+    "looks_real\\node_modules": true,
+    "napkin_sketch\\build": true,
+    "napkin_sketch\\node_modules": true,
+    "test_project\\node_modules": true,
+    "test-project\\node_modules": true
+  }
+}
