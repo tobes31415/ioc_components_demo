@@ -8,7 +8,6 @@
     "tsc": "tsc",
     "build": "run-s clean tsc scss",
     "clean": "rm -rf build",
-    "css": "",
     "scss": "node-sass src/ --recursive --output build"
   },
   "author": "Jake Tober",
