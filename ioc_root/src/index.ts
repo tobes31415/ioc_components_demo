@@ -1,11 +1,15 @@
-import { DI } from "@tobes31415/dependency-injection";
-
-const token = {}; 
-
-DI.useObject(token, {abc:123});
-
-export default function() {
-    console.log("Hello World");
-}
-
 export * from "./Sample/Sample";
+export * from "./components/Box";
+export * from "./components/Button";
+export * from "./components/TextInput";
+export * from "./interfaces/AcceptsChildren";
+export * from "./interfaces/AcceptsLabel";
+export * from "./interfaces/AcceptsMinMax";
+export * from "./interfaces/AcceptsPlaceholder";
+export * from "./interfaces/AcceptsStep";
+export * from "./interfaces/AcceptsValue";
+export * from "./interfaces/Component";
+export * from "./interfaces/EmitsOnChange";
+export * from "./interfaces/EmitsOnClick";
+export * from "./interfaces/EmitsOnKeyPress"; 
+export * from "./Ioc";

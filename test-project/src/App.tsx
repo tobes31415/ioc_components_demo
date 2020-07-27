@@ -1,19 +1,22 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-import { Sample as SampleFoo } from "napkin_sketch"; 
-import { Sample as SampleBar} from "looks_real";
-import {Sample as SampleQux} from "ioc_root";
+import {Box, createNewIocContext, IoCRoot} from "ioc_root"; 
+import {registerWithIoc} from "looks_real";
+
+const ctx = createNewIocContext();
+registerWithIoc(ctx);
 
 function App() {
   return (
+    <IoCRoot IoCContext={ctx}>
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
+        <Box>
+          Hello World
+        </Box>
         <p>
-        <SampleFoo/>
-          <SampleBar/>
-          <SampleQux/>
           Edit <code>src/App.tsx</code> and save to reload.
         </p>
         <a
@@ -26,6 +29,7 @@ function App() {
         </a>
       </header>
     </div>
+    </IoCRoot>
   );
 }
 
