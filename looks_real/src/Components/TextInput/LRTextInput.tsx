@@ -1,5 +1,6 @@
 import React, { useCallback } from "react";
 import { TextProps } from "ioc_root";
+import "./LRTextInput.css";
 
 export function LRTextInput({ value, onChange }: TextProps) {
   const onChangeWrapper = useCallback((e) => onChange(e.target.value), [

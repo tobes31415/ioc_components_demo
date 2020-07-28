@@ -1,0 +1,16 @@
+lr-input-text {
+    background: linear-gradient(337deg, rgba(162,162,162,1) 0%, rgba(251,254,255,1) 100%);
+    display: block;
+    margin: 10px;
+
+    input {
+        width: calc(100% - 20px);
+        padding: 10px;
+        border: 0;
+        outline: 1px solid grey;
+        background-color: rgba(255,255,255,0.5);
+        display: block;
+        box-shadow: inset 10px 10px 13px -14px rgba(0,0,0,0.75);
+
+    }
+}

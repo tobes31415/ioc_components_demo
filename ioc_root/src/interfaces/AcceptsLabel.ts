@@ -1,3 +1,3 @@
 export interface AcceptsLabel {
-    label: string;
+    label?: string;
 }

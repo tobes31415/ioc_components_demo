@@ -1,6 +1,4 @@
-ns-box {
-    background-color: white;
-    display: block;
+ns-input-text {
     border-image-source: url("./box.png");
     border-image-slice: 46 56 53 62;
     border-image-width: 20px 20px 20px 20px;
@@ -10,6 +8,19 @@ ns-box {
 
     padding: 20px;
     box-sizing: border-box;
+    display: block;
     font-family: 'Indie Flower', cursive;
     font-style: italic;
+    position: relative;
+
+    input {
+        border: 0;
+        outline: 0;
+        font-family: 'Indie Flower', cursive;
+        font-style: italic;
+        border-bottom: 1px solid black;
+        display: block;
+        width: calc(100% - 10px);
+        margin:4px;
+    }
 }

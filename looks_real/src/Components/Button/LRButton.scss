@@ -1,0 +1,20 @@
+lr-button {
+    box-shadow: 10px 10px 24px -13px rgba(0,0,0,0.75);
+    background: linear-gradient(337deg, rgba(162,162,162,1) 0%, rgba(251,254,255,1) 100%);
+    display: block;
+    margin: 20px;
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+    transition: all 0.25s ease;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    cursor: pointer;
+
+    &:hover {
+        top: -2px;
+        left: -2px;
+        box-shadow: 10px 10px 24px -7px rgba(0,0,0,0.75);
+    }
+}

@@ -1,4 +1,66 @@
+.demo{
+    width:400px;
+    height:400px;
+    font-size:5em;
+    float:left;
+    text-align:center;
+  }
+  
+  .rainbow{
+          animation: rainbow 2.5s linear;
+          animation-iteration-count: infinite;
+  }
+  
+  @keyframes rainbow{
+          100%,0%{
+              border-color: rgb(255,0,0);
+          }
+          8%{
+            border-color: rgb(255,127,0);
+          }
+          16%{
+            border-color: rgb(255,255,0);
+          }
+          25%{
+            border-color: rgb(127,255,0);
+          }
+          33%{
+            border-color: rgb(0,255,0);
+          }
+          41%{
+            border-color: rgb(0,255,127);
+          }
+          50%{
+            border-color: rgb(0,255,255);
+          }
+          58%{
+            border-color: rgb(0,127,255);
+          }
+          66%{
+            border-color: rgb(0,0,255);
+          }
+          75%{
+            border-color: rgb(127,0,255);
+          }
+          83%{
+            border-color: rgb(255,0,255);
+          }
+          91%{
+            border-color: rgb(255,0,127);
+          }
+  }
+
 lr-box {
-    background-color: red;
     display: block;
+    box-shadow: 10px 10px 24px -7px rgba(0,0,0,0.75);
+    background: linear-gradient(337deg, rgba(162,162,162,1) 0%, rgba(251,254,255,1) 100%);
+    padding: 10px;
+    border-radius: 5px;
+    border-width: 1px;
+    border-style: solid;
+
+    box-sizing: border-box;
+
+    animation: rainbow 2.5s linear;
+    animation-iteration-count: infinite;
 }
