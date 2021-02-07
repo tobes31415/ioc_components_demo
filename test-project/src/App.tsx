@@ -28,6 +28,7 @@ function App() {
           <TextInput value={name} onChange={setName}/>
         </Box>
     </div>
+    <div>Click the "Hello" button to toggle between napkin sketch and fancy components</div>
     </IoCRoot>
   );
 }
